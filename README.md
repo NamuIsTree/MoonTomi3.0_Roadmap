@@ -93,10 +93,12 @@
   - simple_id : 간단한 비평 ID
   - album_id : 앨범 ID
   - rating : 평점
+  - simple_ymd : 비평일
 * playlists : 싱글 트랙 추천 
   - playlist_id : 싱글 트랙 ID
   - album_id : 앨범 ID
   - rating : 별점
+  - date : 추천 날짜
   - url : 추천한 트랙 관련 url (spotify / youtube)
 * tracks - 트랙
   - album_id : 앨범 ID
