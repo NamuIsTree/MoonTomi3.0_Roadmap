@@ -111,22 +111,50 @@
 MoonTomi 3.0 API 설계
 ## WebPage (GET)
 * /home
+
+메인 페이지
 * /regular/{regular_id}
+
+정기 음평회 페이지
 * /review
 
+비평 페이지
+
   - /{review_id}
+
+특정 비평 페이지
 * /archive
+
+간단 비평 페이지
 * /search
 
+검색 페이지 (후순위)
   - q
 
-* /single
+쿼리
 
-  - /{single_id}
+* /playlist
+
+추천 트랙 
+  - /{playlist_id}
+
+특정 추천 트랙
 * /lookup
+
+음평회 기록 한 눈에 보기 페이지
 * /upload
-* /comment
+
+업로드 페이지들
+  - /comment
+  - /album
+  - /simple
+  - /playlist
+  - /genre
+  - /artist
+
 * /error
+
+  - 404 에러 페이지
 
 ## Server
 * api/albums
