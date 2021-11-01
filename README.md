@@ -104,3 +104,75 @@
   - album_id : 앨범 ID
   - track_enum : 트랙 번호
   - track_nm : 트랙 이름
+
+---
+
+# API 설계
+MoonTomi 3.0 API 설계
+## WebPage (GET)
+* /home
+* /regular/{regular_id}
+* /review
+
+  - /{review_id}
+* /archive
+* /search
+
+  - q
+
+* /single
+
+  - /{single_id}
+* /lookup
+* /upload
+* /comment
+* /error
+
+## Server
+* api/albums
+
+앨범 조회
+  - /all
+
+    전체 앨범 조회
+    
+    + option
+    
+  - /opened
+
+    오픈된 앨범 조회
+
+    + option
+
+* api/comments/{album_id}
+
+특정 앨범의 댓글 조회
+
+* api/comment
+
+특정 댓글 조회
+
+  - /{comment_id}
+
+* api/single
+
+특정 간단 비평 조회
+
+  - /all
+
+전체 간단 비평 조회
+
+  - /{single_id}
+
+특정 간단 비평 조회
+
+* api/playlist
+
+추천 싱글 트랙 조회
+
+  - /all
+
+전체 추천 싱글 트랙 조회
+  - /{playlist_id}
+
+특정 추천 싱글 트랙 조회
